@@ -9,7 +9,7 @@ static VALUE cfsdf;
              "wrong argument type %s (GSL::MultiMin::Function_fsdf expected)", \
              rb_class2name(CLASS_OF(x)));
 #endif
-extern VALUE cgsl_multimin_function_fdf;
+RUBY_EXTERN VALUE cgsl_multimin_function_fdf;
 
 static const gsl_multimin_fsdfminimizer_type* get_fsdfminimizer_type(VALUE t)
 {

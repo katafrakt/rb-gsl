@@ -26,7 +26,7 @@
 #include "rb_gsl_with_narray.h"
 #include "rb_gsl_with_nmatrix.h"
 
-EXTERN ID rb_gsl_id_beg, rb_gsl_id_end, rb_gsl_id_excl, rb_gsl_id_to_a;
+RUBY_EXTERN ID rb_gsl_id_beg, rb_gsl_id_end, rb_gsl_id_excl, rb_gsl_id_to_a;
 
 #ifndef CHECK_FIXNUM
 #define CHECK_FIXNUM(x) if(!FIXNUM_P(x)) rb_raise(rb_eTypeError,"Fixnum expected");
@@ -349,5 +349,5 @@ VALUE rb_gsl_nary_eval1(VALUE ary, double (*f)(double));
 VALUE rb_gsl_nmatrix_eval1(VALUE ary, double (*f)(double));
 #endif
 
-EXTERN VALUE cGSL_Object;
+RUBY_EXTERN VALUE cGSL_Object;
 #endif

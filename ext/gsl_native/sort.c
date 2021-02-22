@@ -13,8 +13,8 @@
 #include <gsl/gsl_heapsort.h>
 #include <gsl/gsl_sort.h>
 
-EXTERN ID RBGSL_ID_call;
-EXTERN VALUE cgsl_complex;
+RUBY_EXTERN ID RBGSL_ID_call;
+RUBY_EXTERN VALUE cgsl_complex;
 
 int rb_gsl_comparison_double(const void *aa, const void *bb);
 int rb_gsl_comparison_complex(const void *aa, const void *bb);

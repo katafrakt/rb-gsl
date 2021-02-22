@@ -109,7 +109,7 @@ void Init_tensor_int_init(VALUE module);
 
 void Init_gsl_dirac(VALUE module);
 
-EXTERN VALUE cGSL_Object;
+RUBY_EXTERN VALUE cGSL_Object;
 
 void Init_tamu_anova(VALUE module);
 
@@ -140,7 +140,7 @@ void Init_alf(VALUE module);
 void Init_geometry(VALUE module);
 
 #include <gsl/gsl_multiset.h>
-extern VALUE cMultiset;
+RUBY_EXTERN VALUE cMultiset;
 void Init_multiset(VALUE module);
 
 #endif

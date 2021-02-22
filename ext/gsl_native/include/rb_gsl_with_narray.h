@@ -22,7 +22,7 @@ gsl_vector* na_to_gv(VALUE na);
 gsl_vector_int* na_to_gv_int(VALUE na);
 gsl_matrix* na_to_gm(VALUE nna);
 gsl_matrix_int* na_to_gm_int(VALUE nna);
-extern VALUE cNVector, cNMatrix;
+RUBY_EXTERN VALUE cNVector, cNMatrix;
 
 gsl_vector_complex* na_to_gv_complex(VALUE na);
 gsl_vector_complex_view* na_to_gv_complex_view(VALUE na);
