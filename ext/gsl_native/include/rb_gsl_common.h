@@ -25,6 +25,7 @@
 #include <gsl/gsl_ieee_utils.h>
 #include "rb_gsl_with_narray.h"
 #include "rb_gsl_with_nmatrix.h"
+#include "gsl_config.h"
 
 RUBY_EXTERN ID rb_gsl_id_beg, rb_gsl_id_end, rb_gsl_id_excl, rb_gsl_id_to_a;
 
@@ -292,7 +293,9 @@ RUBY_EXTERN ID rb_gsl_id_beg, rb_gsl_id_end, rb_gsl_id_excl, rb_gsl_id_to_a;
 #endif
 
 #ifndef RBGSL_SET_CLASS
-#ifdef RB_OBJ_WRITE
+#if defined(RUBY_3)
+#define RBGSL_SET_CLASS0(obj0, cls) RBASIC_SET_CLASS(obj0, cls)
+#elif defined(RB_OBJ_WRITE)
 #define RBGSL_SET_CLASS0(obj0, cls) RB_OBJ_WRITE(obj0, &(RBASIC_CLASS(obj0)), cls)
 #else
 #define RBGSL_SET_CLASS0(obj0, cls) RBASIC(obj0)->klass = cls
