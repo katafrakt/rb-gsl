@@ -47,6 +47,8 @@
 #define VEC_VIEW_P VECTOR_INT_VIEW_P
 #endif
 
+#define memcpy memcpy
+
 // From ext/vector_source.c
 void FUNCTION(get_range,beg_en_n)(VALUE range, BASE *beg, BASE *en, size_t *n, int *step);
 
@@ -2706,3 +2708,7 @@ void FUNCTION(Init_gsl_matrix,init)(VALUE module)
 #undef MAT_ROW_P
 #undef CHECK_MAT
 #undef MAT_VIEW_P
+
+#ifdef ruby_nonempty_memcpy
+#define memcpy ruby_nonempty_memcpy
+#endif
