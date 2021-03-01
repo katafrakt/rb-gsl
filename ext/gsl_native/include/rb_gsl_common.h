@@ -294,10 +294,7 @@ extern ID rb_gsl_id_beg, rb_gsl_id_end, rb_gsl_id_excl, rb_gsl_id_to_a;
 
 #ifndef RBGSL_SET_CLASS
 #if defined(RUBY_3)
-#define RBGSL_SET_CLASS0(obj0, cls) do { \
-    VALUE _obj_klass = RBASIC_CLASS(obj0); \
-    RB_OBJ_WRITE(obj0, &_obj_klass, cls); \
-} while(0)
+#define RBGSL_SET_CLASS0(obj0, cls) RB_OBJ_WRITE(obj0, &(RBASIC(obj0)->klass), cls)
 #elif defined(RB_OBJ_WRITE)
 #define RBGSL_SET_CLASS0(obj0, cls) RB_OBJ_WRITE(obj0, &(RBASIC_CLASS(obj0)), cls)
 #else
