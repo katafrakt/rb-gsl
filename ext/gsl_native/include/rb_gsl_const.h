@@ -18,6 +18,6 @@
 #include <gsl/gsl_const_cgsm.h>
 #include <gsl/gsl_const_num.h>
 
-RUBY_EXTERN VALUE mgsl_const_mks, mgsl_const_cgs;
+extern VALUE mgsl_const_mks, mgsl_const_cgs;
 
 #endif

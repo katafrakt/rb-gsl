@@ -15,6 +15,6 @@
 #include <gsl/gsl_rng.h>
 #include "rb_gsl.h"
 
-RUBY_EXTERN VALUE cgsl_rng;
+extern VALUE cgsl_rng;
 
 #endif

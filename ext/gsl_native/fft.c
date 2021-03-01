@@ -17,8 +17,8 @@ VALUE cgsl_fft_complex_wavetable, cgsl_fft_complex_workspace;
 VALUE cgsl_fft_real_wavetable, cgsl_fft_halfcomplex_wavetable;
 VALUE cgsl_fft_real_workspace;
 
-RUBY_EXTERN VALUE cgsl_vector_int;
-RUBY_EXTERN VALUE cgsl_vector_complex;
+extern VALUE cgsl_vector_int;
+extern VALUE cgsl_vector_complex;
 
 static void GSL_FFT_Workspace_free(GSL_FFT_Workspace *space);
 

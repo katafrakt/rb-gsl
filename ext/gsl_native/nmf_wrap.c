@@ -14,7 +14,7 @@ double difcost(const gsl_matrix *a, const gsl_matrix *b);
 
 //VALUE mNMF;
 static VALUE mNMF;
-RUBY_EXTERN VALUE cgsl_matrix;
+extern VALUE cgsl_matrix;
 
 /*
  * call-seq:

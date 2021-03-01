@@ -29,41 +29,41 @@
 typedef gsl_permutation gsl_index;
 
 #ifdef HAVE_NARRAY_H
-RUBY_EXTERN VALUE cNArray;
+extern VALUE cNArray;
 #endif
 
 #ifdef HAVE_NMATRIX_H
-RUBY_EXTERN VALUE cNMatrix;
+extern VALUE cNMatrix;
 #endif
 
-RUBY_EXTERN VALUE cgsl_block, cgsl_block_int;
-RUBY_EXTERN VALUE cgsl_block_uchar;
-RUBY_EXTERN VALUE cgsl_block_complex;
-RUBY_EXTERN VALUE cgsl_vector, cgsl_vector_complex;
-RUBY_EXTERN VALUE cgsl_vector_col;
-RUBY_EXTERN VALUE cgsl_vector_col_view;
-RUBY_EXTERN VALUE cgsl_vector_complex_col;
-RUBY_EXTERN VALUE cgsl_vector_complex_col_view;
-RUBY_EXTERN VALUE cgsl_vector_view, cgsl_vector_complex_view;
-RUBY_EXTERN VALUE cgsl_vector_view_ro, cgsl_vector_col_view_ro;
-RUBY_EXTERN VALUE cgsl_vector_complex_view_ro;
+extern VALUE cgsl_block, cgsl_block_int;
+extern VALUE cgsl_block_uchar;
+extern VALUE cgsl_block_complex;
+extern VALUE cgsl_vector, cgsl_vector_complex;
+extern VALUE cgsl_vector_col;
+extern VALUE cgsl_vector_col_view;
+extern VALUE cgsl_vector_complex_col;
+extern VALUE cgsl_vector_complex_col_view;
+extern VALUE cgsl_vector_view, cgsl_vector_complex_view;
+extern VALUE cgsl_vector_view_ro, cgsl_vector_col_view_ro;
+extern VALUE cgsl_vector_complex_view_ro;
 
-RUBY_EXTERN VALUE cgsl_vector_int, cgsl_vector_int_col;
-RUBY_EXTERN VALUE cgsl_vector_int_view, cgsl_vector_int_col_view;
-RUBY_EXTERN VALUE cgsl_vector_int_view_ro, cgsl_vector_int_col_view_ro;
+extern VALUE cgsl_vector_int, cgsl_vector_int_col;
+extern VALUE cgsl_vector_int_view, cgsl_vector_int_col_view;
+extern VALUE cgsl_vector_int_view_ro, cgsl_vector_int_col_view_ro;
 
-RUBY_EXTERN VALUE cgsl_matrix, cgsl_matrix_complex;
-RUBY_EXTERN VALUE cgsl_matrix_view_ro;
-RUBY_EXTERN VALUE cgsl_matrix_complex_view_ro;
-RUBY_EXTERN VALUE cgsl_matrix_view, cgsl_matrix_complex_view;
-RUBY_EXTERN VALUE cgsl_matrix_int, cgsl_matrix_int_view;
-RUBY_EXTERN VALUE cgsl_matrix_int_view_ro;
-RUBY_EXTERN VALUE cgsl_permutation;
-RUBY_EXTERN VALUE cgsl_index;
-RUBY_EXTERN VALUE cgsl_function;
-RUBY_EXTERN VALUE mgsl_narray;
+extern VALUE cgsl_matrix, cgsl_matrix_complex;
+extern VALUE cgsl_matrix_view_ro;
+extern VALUE cgsl_matrix_complex_view_ro;
+extern VALUE cgsl_matrix_view, cgsl_matrix_complex_view;
+extern VALUE cgsl_matrix_int, cgsl_matrix_int_view;
+extern VALUE cgsl_matrix_int_view_ro;
+extern VALUE cgsl_permutation;
+extern VALUE cgsl_index;
+extern VALUE cgsl_function;
+extern VALUE mgsl_narray;
 
-RUBY_EXTERN VALUE mDirac;
+extern VALUE mDirac;
 
 gsl_matrix_view* gsl_matrix_view_alloc();
 void gsl_matrix_view_free(gsl_matrix_view * mv);

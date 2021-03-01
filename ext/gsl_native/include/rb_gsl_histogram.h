@@ -18,11 +18,11 @@
 #include <gsl/gsl_histogram2d.h>
 #include "rb_gsl.h"
 
-RUBY_EXTERN VALUE cgsl_histogram;
-RUBY_EXTERN VALUE cgsl_histogram_range;
-RUBY_EXTERN VALUE cgsl_histogram_bin;
-RUBY_EXTERN VALUE cgsl_histogram2d;
-RUBY_EXTERN VALUE cgsl_histogram2d_view;
+extern VALUE cgsl_histogram;
+extern VALUE cgsl_histogram_range;
+extern VALUE cgsl_histogram_bin;
+extern VALUE cgsl_histogram2d;
+extern VALUE cgsl_histogram2d_view;
 
 typedef struct {
   gsl_histogram h;

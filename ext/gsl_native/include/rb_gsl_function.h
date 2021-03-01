@@ -15,9 +15,9 @@
 
 #include "rb_gsl.h"
 
-RUBY_EXTERN VALUE cgsl_function;
-RUBY_EXTERN VALUE cgsl_function_fdf;
-RUBY_EXTERN ID RBGSL_ID_call, RBGSL_ID_arity;
+extern VALUE cgsl_function;
+extern VALUE cgsl_function_fdf;
+extern ID RBGSL_ID_call, RBGSL_ID_arity;
 void gsl_function_mark(gsl_function *f);
 void gsl_function_free(gsl_function *f);
 #endif

@@ -8,11 +8,11 @@
 #include "nmatrix_config.h"
 #include "nmatrix.h"
 #include "include/rb_gsl_array.h"
-RUBY_EXTERN VALUE cNMatrix;
+extern VALUE cNMatrix;
 
 // nmatrix external API
-RUBY_EXTERN VALUE rb_nmatrix_dense_create(nm_dtype_t dtype, size_t* shape, size_t rank, void* elements, size_t length);
-RUBY_EXTERN VALUE rb_nvector_dense_create(nm_dtype_t dtype, void* elements, size_t length);
+extern VALUE rb_nmatrix_dense_create(nm_dtype_t dtype, size_t* shape, size_t rank, void* elements, size_t length);
+extern VALUE rb_nvector_dense_create(nm_dtype_t dtype, void* elements, size_t length);
 
 // functions to convert NMatrix to GSL::Vector
 gsl_vector* rb_gsl_nmatrix_to_gv(VALUE nm);

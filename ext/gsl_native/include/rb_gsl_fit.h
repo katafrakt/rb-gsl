@@ -18,6 +18,6 @@
 #include <gsl/gsl_multifit_nlin.h>
 #include "rb_gsl_array.h"
 
-RUBY_EXTERN VALUE mgsl_multifit;
+extern VALUE mgsl_multifit;
 
 #endif

@@ -39,11 +39,11 @@ enum {
   RB_GSL_FFT_COPY,
 };
 
-RUBY_EXTERN VALUE mgsl_fft;
-RUBY_EXTERN VALUE cgsl_fft_wavetable;
-RUBY_EXTERN VALUE cgsl_fft_wavetable_factor;
-RUBY_EXTERN VALUE cgsl_fft_complex_wavetable, cgsl_fft_complex_workspace;
-RUBY_EXTERN VALUE cgsl_fft_real_wavetable, cgsl_fft_halfcomplex_wavetable;
-RUBY_EXTERN VALUE cgsl_fft_real_workspace;
+extern VALUE mgsl_fft;
+extern VALUE cgsl_fft_wavetable;
+extern VALUE cgsl_fft_wavetable_factor;
+extern VALUE cgsl_fft_complex_wavetable, cgsl_fft_complex_workspace;
+extern VALUE cgsl_fft_real_wavetable, cgsl_fft_halfcomplex_wavetable;
+extern VALUE cgsl_fft_real_workspace;
 
 #endif
